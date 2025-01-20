@@ -1,0 +1,35 @@
+The ``BaseGeometry`` class
+===========================
+
+testing the ``integer_validator`` method
+----------------------------------------
+
+importing the baseGeometry class:
+   >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+creating an instance:
+
+   >>> bg = BaseGeometry()
+
+case 0:
+
+   >>> bg.integer_validator("my_int", 12)
+
+case 1:
+
+   >>> bg.integer_validator("width", 89)
+
+case 2:
+
+   >>> bg.integer_validator("name", "John")
+   Traceback (most recent call last):
+        ...
+   TypeError: name must be an integer
+
+case 3:
+
+   >>> bg.integer_validator("distance", -4)
+   Traceback (most recent call last):
+        ...
+   ValueError: distance must be greater than 0
+ 

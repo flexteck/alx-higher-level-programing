@@ -1,0 +1,27 @@
+The ``text_indebtation`` Module
+===============================
+
+Applying the ``text_indentation`` function
+------------------------------------------
+
+Importint the ``text_indentation`` function
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+testing normal string
+
+    >>> text_indentation("Welcome to Alx Doctest")
+    Welcome to Alx Doctest
+
+testing for space at the beginning of the text string
+
+    >>> text_indentation(""" Utrum igitur tibi litteram videor an totas paginas commovere?""")
+    Utrum igitur tibi litteram videor an totas paginas commovere?
+    <BLANKLINE>
+
+testing the character '.' and  space at the end of the text
+
+    >>> text_indentation("""igitur ne illud quidem. Fortasse id optimum, sed ubi illud """)
+    igitur ne illud quidem.
+    <BLANKLINE>
+Fortasse id optimum, sed ubi illud
